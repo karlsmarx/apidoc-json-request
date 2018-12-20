@@ -1,22 +1,20 @@
 {
-  "name": "apidoc-plugin-test",
-  "version": "1.0.0",
-  "description": "Only a test and example plugin. It demonstrates the usage of the apidoc hook system.",
-  "author": "Peter Rottmann <rottmann@inveris.de>",
+  "name": "apidoc-json-request",
+  "version": "0.1.0",
+  "description": "A plugin to add feature o json body requests in Apidoc.",
+  "author": "Karl Alexander <karl@espressolabs.com.br>",
   "license": {
-    "type": "MIT",
-    "url": "https://github.com/apidoc/apidoc/blob/master/LICENSE"
+    "type": "MIT"
   },
   "main": "index.js",
-  "homepage": "http://apidocjs.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/apidoc/apidoc-plugin-test.git"
+    "url": "https://github.com/karlsmarx/apidoc-json-request"
   },
   "scripts": {
     "test": "npm run jshint && mocha test/",
     "jshint": "jshint",
-    "build-example": "cd .. && apidoc-plugin-test/node_modules/apidoc/bin/apidoc -i apidoc-plugin-test/test/src/ -o apidoc-plugin-test/tmp/ --debug --verbose && cd apidoc-plugin-test",
+    "build-example": "cd .. && node apidoc-plugin-json-request/node_modules/apidoc/bin/apidoc -i apidoc-plugin-json-request/test/src/ -o apidoc-plugin-json-request/tmp/ --debug --verbose && cd apidoc-plugin-json-request",
     "check-updates": "npm-check-updates"
   },
   "keywords": [

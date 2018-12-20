@@ -50,7 +50,7 @@ describe('Create doc and compare with fixture', function() {
 
         api = apidoc.parse({
             src: exampleBasePath + '/src/'
-        });
+		});
 
         if (api === false)
             throw new Error('Parse failed.');
